@@ -17,29 +17,6 @@ defmodule GraphqlBarebonesWeb do
   and import those modules here.
   """
 
-  def controller do
-    quote do
-      use Phoenix.Controller, namespace: GraphqlBarebonesWeb
-      import Plug.Conn
-      import GraphqlBarebonesWeb.Router.Helpers
-      import GraphqlBarebonesWeb.Gettext
-    end
-  end
-
-  def view do
-    quote do
-      use Phoenix.View, root: "lib/graphql_barebones_web/templates",
-                        namespace: GraphqlBarebonesWeb
-
-      # Import convenience functions from controllers
-      import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
-
-      import GraphqlBarebonesWeb.Router.Helpers
-      import GraphqlBarebonesWeb.ErrorHelpers
-      import GraphqlBarebonesWeb.Gettext
-    end
-  end
-
   def router do
     quote do
       use Phoenix.Router
