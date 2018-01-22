@@ -42,6 +42,8 @@ defmodule Plsm.Config.Config do
       |> append_config_item_string("module_name", "module name")
       |> append_next_item()
       |> append_config_item_string("destination", "output path")
+      |> append_next_item()
+      |> append_config_item_string("absinthe_destination", "absinthe output path")
     end
 
     defp append_config_item_string(current, key, value) do

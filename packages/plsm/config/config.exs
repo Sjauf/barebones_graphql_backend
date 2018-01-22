@@ -44,6 +44,7 @@ use Mix.Config
 config :plsm,
 module_name: "module name",
 destination: "output path",
+absinthe_destination: "absinthe output path",
 server: "localhost",
 port: "3306",
 database_name: "name of database",
