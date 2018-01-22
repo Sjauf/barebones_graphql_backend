@@ -40,9 +40,10 @@ defmodule GraphqlBarebones.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:dataloader, "~> 1.0.0"},
-      {:plsm, path: "./packages/plsm"},
-      {:absinthe, "~> 1.4"}
-    ]
+      {:plsm, git: "https://github.com/Sjauf/plsm_absinthe.git"},
+      {:absinthe, "~> 1.4"},
+      {:absinthe_plug, "~> 1.4.0"}
+  ]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
